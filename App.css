@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff4e6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 3rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: linear-gradient(90deg, #d79e56, #fff4e6);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar {
+  margin-top: 20px;
+}
+
+.nav-links {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  font-size: 18px;
+  cursor: pointer;
+  color: #000;
+  transition: 1s ease;
+}
+
+.nav-links li:hover {
+  color: #d79e56;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 50px 20px;
+  background-color: #fff4e6;
+  color: #000;
+}
+
+.quote-container {
+  background-color: #D79E56; /* Background color */
+  padding: 5px 10px; /* Padding to create the rectangle effect */
+  width: 350px; /* Smaller than the polaroid frame */
+  margin: 10px auto; /* Center the rectangle horizontally */
+  border-radius: 0px; /* Optional: Slight rounding for better visuals */
+}
+
+.quote-left {
+  font-size: 32px;
+  text-align: left;
+  font-family: 'Hurricane', cursive;
+  color: #000000;
+  background-color: #d79e56;
+  padding: 0rem 0rem;
+  border-radius: 0px;
+}
+
+.quote-right {
+  font-size: 32px;
+  text-align: right;
+  font-family: 'Hurricane', cursive;
+  color: #000000;
+  background-color: #d79e56;
+  padding: 0rem 0rem;
+  border-radius: 0px;
+}
+
+.polaroid-container {
+  background-color: #D79E56;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.polaroid-frame {
+  width: 400px;
+  height: 300px;
+ /* Includes space for the "polaroid" border */
+  background-color: #fff;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*.image-container {
+  position: relative;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+}
+*/
+
+.slideshow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.slideshow-image.fade-in {
+  opacity: 1;
+}
+
+.slideshow-image.fade-out {
+  opacity: 0;
+}
+
+/* Description Section */
+.description {
+  font-family: sans-serif;
+  text-align: justify;
+  font-style: italic;
+  padding: 2rem;
+  margin: 50px auto;
+  font-size: 1rem;
+  color: #000;
+  max-width: 90%;
+  line-height: 1.8;
+  transform: translateY(50px); /* Move slightly downward */
+  transition: opacity 1s ease-out, transform 1s ease-out, background-color 1s ease, color 1s ease;; /* Smooth transition */
+}
+
+.highlight {
+  background-color: #d79e56; /* Highlight color */
+  color: #ffffff; /* Optional: Change text color during highlight */
+}
+
+.description.fade-in {
+  opacity: 5; /* Fully visible when scrolled into view */
+  transform: translateY(0); /* Move to original position */
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  padding: 20px;
+  color: #000;
+  font-size: 14px;
+  border-top: 1px solid #d79e56;
+}
+.contact-button {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+.contact-button:hover {
+  color: #d79e56;
+}
+
+.form-section {
+  padding: 40px 20px;
+  background-color: #FFF4E6;
+  text-align: center;
+  margin-bottom: 80px;
+  
+}
+
+.form-section h2 {
+  font-size: 24px;
+  color: #D79E56;
+  margin-top: 0%;
+  margin-bottom: 20px;
+}
+
+.user-form {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding: 30px;
+  border: 1px solid #D79E56;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #000;
+}
+
+.form-group input,
+.form-group select {
+  width: 95%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.submit-button {
+  background-color: #D79E56;
+  color: #FFF;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #C68A4E;
+}
+
+/* Highlight Effect */
+.footer {
+  background-color: #fff4e6;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 1s ease-in-out;
+}
+
+.footer.highlight {
+  background-color: #d79e56;
+  color: #fff;
+}
+
+/* Prevent Blue Link Styling */
+.contact-button:focus,
+.contact-button:active {
+  outline: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.fade-scroll {
+  opacity: 0; /* Fully transparent */
+  transform: translateY(100px); /* Slight downward shift */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth fade-in effect */
+}
+
+/* Fade-in effect when the element becomes visible */
+.fade-in {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Return to original position */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* For Firefox */
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .quote-left,
+  .quote-right {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .polaroid-frame {
+    width: 400px;
+    height: 300px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .form-section {
+    padding: 10px;
+  }
+
+  .user-form {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .polaroid-frame {
+    width: 300px;
+    height: 200px;
+  }
+  .quote-left,
+  .quote-right {
+    font-size: 1.2rem;
+  }
+
+  .polaroid-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
